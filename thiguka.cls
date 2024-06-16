@@ -3,7 +3,11 @@
 \LoadClass[10pt,a4paper,twoside]{article}
 \usepackage{hyperref}
 
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+    \setmainfont{Gentium Plus}
+
+% \usepackage[utf8]{fontenc}
+% \usepackage[utf8]{inputenc}
 
 \usepackage{xcoffins,titling,kantlipsum}
 \NewCoffin \myabstractcoffin
@@ -45,15 +49,14 @@
     \end{center}
 }
 
-\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
-\newcommand{\agradj}{AGR\textapprox{}ADJ}
+\newcommand{\agradj}{AGR\~{}ADJ}
 
 \providecommand{\thigukacopyright}{
 \section*{Copyright}
 
 Thiguka is in the public domain.
 
-This document is also in the public domain, under the terms of CC0 1.0 Universal, at \url{https://creativecommons.org/publicdomain/zero/1.0/}.
+This document is also in the public domain, under the terms of CC0 1.0 Universal, \\at \url{https://creativecommons.org/publicdomain/zero/1.0/}.
 }
 
 \renewcommand{\section}{%
